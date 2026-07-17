@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, yes=0; cin >> n;
+    string curr;
+    while (n--){
+      cin >> curr;
+      if (curr=="and"||curr=="not"||curr=="that"||curr=="the"||curr=="you") yes+=1;
+    }
+    cout << (yes?"Yes":"No");
+}
